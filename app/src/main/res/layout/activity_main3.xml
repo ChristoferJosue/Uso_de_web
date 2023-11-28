@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#404040"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/btnAtras3"
+        android:layout_width="91dp"
+        android:layout_height="67dp"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/klipartz_com" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/lbltitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autoSizeTextType="none"
+
+                android:text="Características"
+                android:textAlignment="center"
+                android:textColor="#FEFEFE"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/TvSubtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="¿De dónde obtiene Chat GPT la información para poder generar respuestas complejas?
+    "
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:accessibilityHeading="false"
+                android:text="Un sistema de chat con inteligencia artificial que ha iniciado una nueva era, y que también tiene una versión de pago llamada ChatGPT Plus. Se trata de una de las IA más capaces que hemos probado en los últimos tiempos, siendo capaz de responder a cualquier cosa que le pidas, y de hacer muchas cosas que le solicites. Se ha hecho tan popular que hay muchos proyectos alternativos basados en esta IA, incluyendo hablar con ChatGPT en WhatsApp.                                               "
+                android:textAlignment="inherit"
+                android:textColor="#FEFEFE"
+                android:verticalScrollbarPosition="defaultPosition" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="1.Generación de Lenguaje Natural: ChatGPT es capaz de generar respuestas coherentes y contextuales en lenguaje natural, lo que le permite participar en conversaciones de manera fluida.
+    \n2. Contexto Sensible: Tiene la capacidad de comprender y recordar el contexto de la conversación anterior, lo que le permite responder de manera coherente a preguntas o comentarios anteriores.
+    \n3.Amplio Conocimiento: Está entrenado con una amplia gama de datos, lo que le proporciona conocimientos en diversos temas, aunque su conocimiento tiene un límite en la información disponible hasta mi última actualización en enero de 2022.
+    \n4.Adaptabilidad: Puede adaptarse a diferentes tonos de conversación y estilos de comunicación, lo que facilita la interacción con usuarios de manera variada.
+    \n5.Generación Creativa: Puede generar respuestas creativas y originales en función de las consultas y los contextos dados.
+    \n6.Manejo de Preguntas Abiertas: Es capaz de manejar preguntas abiertas y proporcionar respuestas detalladas o informativas en la medida de lo posible.
+    \n7.Idiomas Múltiples: Puede comunicarse en varios idiomas, aunque su rendimiento puede variar según el idioma.
+    \n8.No Tiene Acceso a Información Actualizada: Es importante tener en cuenta que mi conocimiento está basado en datos recopilados hasta enero de 2022, por lo que no tengo acceso a eventos o desarrollos ocurridos después de esa fecha.
+    \n9.No Conoce Información Personal: ChatGPT está diseñado para ser respetuoso de la privacidad y no tiene la capacidad de conocer información personal sobre usuarios a menos que se comparta en el curso de la conversación.
+    \n10.Puede Generar Código: Tiene la capacidad de generar fragmentos de código en varios lenguajes de programación, aunque es importante revisar y entender el código generado, ya que no garantiza su corrección funcional."
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

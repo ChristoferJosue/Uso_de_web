@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#404040"
+    tools:context=".MainActivity2">
+
+    <ImageButton
+        android:id="@+id/btnAtras2"
+        android:layout_width="91dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginBottom="4dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/klipartz_com" />
+
+    <ImageButton
+        android:id="@+id/btnSiguiente2"
+        android:layout_width="91dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="579dp"
+        android:layout_marginBottom="4dp"
+        android:rotation="180"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.95"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/klipartz_com" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="570dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lbltitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoSizeTextType="none"
+
+            android:text="¿Qué es ChatGPT?"
+            android:textAlignment="center"
+            android:textColor="#FEFEFE"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <TextView
+                android:id="@+id/TvSubtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Definición"
+                android:textSize="20dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:accessibilityHeading="false"
+                android:text="
+ChatGPT es un modelo de lenguaje desarrollado por OpenAI que utiliza inteligencia artificial para comprender y generar respuestas en lenguaje natural. Basado en la arquitectura GPT-3.5, destaca por su capacidad para entender contextos complejos y generar texto coherente en conversaciones diversas. Se adapta a diferentes estilos de comunicación y puede manejar preguntas abiertas. Aunque carece de conciencia y emociones, se especializa en asistir con información y facilitar la interacción hombre-máquina a través de la comunicación textual. Su conocimiento se basa en datos hasta enero de 2022 y abarca una amplia gama de temas. Además, tiene la capacidad de generar código en varios lenguajes de programación.             "
+                android:textAlignment="inherit"
+                android:textColor="#FEFEFE"
+                android:verticalScrollbarPosition="defaultPosition" />
+            <Button
+                android:id="@+id/btnWeb"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:text="IR AL SITIO WEB"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
